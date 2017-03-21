@@ -9,6 +9,7 @@ $ships = $shipLoader->getShips();
 $rebelShip = new RebelShip('My new rebel ship');
 $ships[] = $rebelShip;
 
+var_dump($rebelShip->getFavoriteJedi());die();
 $errorMessage = '';
 if (isset($_GET['error'])) {
     switch ($_GET['error']) {
