@@ -19,7 +19,7 @@ class RebelShip extends Ship{
   
   public function getNameAndSpecs($useShortFormat = false)
     {
-      $val = $this->getNameAndSpecs($useShortFormat);
+      $val = parent::getNameAndSpecs($useShortFormat);
       $val .= ' (Jedi)';
       
       return $val;
