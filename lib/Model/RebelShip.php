@@ -1,5 +1,5 @@
 <?php
 
-class RebelShip{
+class RebelShip extends Ship{
   
 }

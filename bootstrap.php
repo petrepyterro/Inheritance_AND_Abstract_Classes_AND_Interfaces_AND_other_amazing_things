@@ -3,7 +3,7 @@
 $configuration = array(
     'db_dsn'  => 'mysql:host=localhost;dbname=Services_Dependency_Injection_AND_Containers',
     'db_user' => 'root',
-    'db_pass' => mysql,
+    'db_pass' => 'mysql',
 );
 
 require_once __DIR__.'/lib/Service/Container.php';
