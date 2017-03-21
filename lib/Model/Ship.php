@@ -26,11 +26,6 @@ class Ship
         return !$this->underRepair;
     }
 
-    public function sayHello()
-    {
-        echo 'Hello!';
-    }
-
     public function getName()
     {
         return $this->name;
@@ -130,5 +125,9 @@ class Ship
     public function setId($id)
     {
         $this->id = $id;
+    }
+    
+    public function getType() {
+      return 'Empire';
     }
 }
