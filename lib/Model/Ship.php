@@ -130,9 +130,4 @@ class Ship
     public function getType() {
       return 'Empire';
     }
-    
-    protected function getSecretDoorCodeToTheDeathstar()
-    {
-        return 'Ra1nb0ws';
-    }
 }

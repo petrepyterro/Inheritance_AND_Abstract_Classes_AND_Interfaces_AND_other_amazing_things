@@ -19,7 +19,6 @@ class RebelShip extends Ship{
   
   public function getNameAndSpecs($useShortFormat = false)
     {
-      return $this->getSecretDoorCodeToTheDeathstar();
       if ($useShortFormat) {
         return sprintf(
           '%s: %s/%s/%s {Rebel}',
