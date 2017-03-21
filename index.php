@@ -60,6 +60,7 @@ if (isset($_GET['error'])) {
                 <thead>
                     <tr>
                         <th>Ship</th>
+                        <th>Type</th>
                         <th>Weapon Power</th>
                         <th>Jedi Factor</th>
                         <th>Strength</th>
@@ -70,6 +71,7 @@ if (isset($_GET['error'])) {
                     <?php foreach ($ships as $ship): ?>
                         <tr>
                             <td><?php echo $ship->getName(); ?></td>
+                            <td><?php echo $ship->getType(); ?></td>
                             <td><?php echo $ship->getWeaponPower(); ?></td>
                             <td><?php echo $ship->getJediFactor(); ?></td>
                             <td><?php echo $ship->getStrength(); ?></td>

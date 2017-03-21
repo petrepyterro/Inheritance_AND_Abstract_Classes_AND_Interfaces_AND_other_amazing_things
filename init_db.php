@@ -3,16 +3,16 @@
 /*
  * SETTINGS!
  */
-$databaseName = 'Services_Dependency_Injection_AND_Containers';
+$databaseName = 'oo_battle';
 $databaseUser = 'root';
-$databasePassword = 'mysql';
+$databasePassword = '';
 
 /*
  * CREATE THE DATABASE
  */
 $pdoDatabase = new PDO('mysql:host=localhost', $databaseUser, $databasePassword);
 $pdoDatabase->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$pdoDatabase->exec('CREATE DATABASE IF NOT EXISTS Services_Dependency_Injection_AND_Containers');
+$pdoDatabase->exec('CREATE DATABASE IF NOT EXISTS oo_battle');
 
 /*
  * CREATE THE TABLE
