@@ -4,7 +4,7 @@ class AbstractShip{
   private $id;
   private $name;
   private $weaponPower = 0;
-  private $jediFactor = 0;
+  
   private $strength = 0;
   private $underRepair;
   public function __construct($name){
@@ -33,7 +33,7 @@ class AbstractShip{
         '%s: %s/%s/%s',
         $this->name,
         $this->weaponPower,
-        $this->jediFactor,
+        $this->getJediFactor(),
         $this->strength
       );
     } else {
@@ -41,7 +41,7 @@ class AbstractShip{
         '%s: w:%s, j:%s, s:%s',
         $this->name,
         $this->weaponPower,
-        $this->jediFactor,
+        $this->getJediFactor(),
         $this->strength
       );
     }
@@ -57,13 +57,7 @@ class AbstractShip{
   {
       return $this->weaponPower;
   }
-  /**
-   * @return int
-   */
-  public function getJediFactor()
-  {
-      return $this->jediFactor;
-  }
+  
   /**
    * @param string $name
    */
@@ -78,6 +72,7 @@ class AbstractShip{
   {
       $this->weaponPower = $weaponPower;
   }
+  
   /**
    * @param int $jediFactor
    */
