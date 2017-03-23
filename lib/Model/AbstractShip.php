@@ -6,15 +6,11 @@ class AbstractShip{
   private $weaponPower = 0;
   
   private $strength = 0;
-  private $underRepair;
+  
   public function __construct($name){
     $this->name = $name;
-    // randomly put this ship under repair
-    $this->underRepair = mt_rand(1, 100) < 30;
   }
-  public function isFunctional(){
-    return !$this->underRepair;
-  }
+  
   public function getName(){
     return $this->name;
   }
@@ -88,7 +84,5 @@ class AbstractShip{
   {
       $this->id = $id;
   }
-  public function getType() {
-    return 'Empire';
-  }
+  
 }
