@@ -22,4 +22,8 @@ class RebelShip extends Ship{
 
     return $val;
   }
+  
+  public function getJediFactor() {
+    return rand(10, 30);
+  }
 }
