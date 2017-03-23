@@ -1,6 +1,6 @@
 <?php
 
-class AbstractShip{
+abstract class AbstractShip{
   private $id;
   private $name;
   private $weaponPower = 0;
@@ -85,4 +85,5 @@ class AbstractShip{
       $this->id = $id;
   }
   
+  abstract public function getJediFactor();
 }
