@@ -10,4 +10,12 @@ class Ship extends AbstractShip{
   {
       return $this->jediFactor;
   }
+  
+  /**
+   * @param int $jediFactor
+   */
+  public function setJediFactor($jediFactor)
+  {
+      $this->jediFactor = $jediFactor;
+  }
 }

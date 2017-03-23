@@ -73,13 +73,7 @@ class AbstractShip{
       $this->weaponPower = $weaponPower;
   }
   
-  /**
-   * @param int $jediFactor
-   */
-  public function setJediFactor($jediFactor)
-  {
-      $this->jediFactor = $jediFactor;
-  }
+  
   /**
    * @return int
    */
