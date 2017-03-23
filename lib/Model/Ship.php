@@ -1,5 +1,5 @@
 <?php
 
-class Ship{
+class Ship extends AbstractShip{
 
 }
