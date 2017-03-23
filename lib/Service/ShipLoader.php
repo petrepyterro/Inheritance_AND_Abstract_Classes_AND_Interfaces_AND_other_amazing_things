@@ -8,7 +8,7 @@ class ShipLoader{
   }
 
   /**
-   * @return Ship[]
+   * @return AbstractShip[]
    */
   public function getShips(){
     $ships = array();
@@ -24,7 +24,7 @@ class ShipLoader{
 
   /**
    * @param $id
-   * @return Ship
+   * @return null|AbstractShip
    */
   public function findOneById($id){
     $statement = $this->getPDO()->prepare('SELECT * FROM ship WHERE id = :id');
