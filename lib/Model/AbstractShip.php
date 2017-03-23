@@ -86,4 +86,6 @@ abstract class AbstractShip{
   }
   
   abstract public function getJediFactor();
+  abstract public function getType();
+  abstract public function isFunctional();
 }
