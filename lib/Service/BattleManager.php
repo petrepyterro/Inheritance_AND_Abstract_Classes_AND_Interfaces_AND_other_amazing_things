@@ -54,7 +54,7 @@ class BattleManager{
     return new BattleResult($usedJediPowers, $winningShip, $losingShip);
   }
 
-  private function didJediDestroyShipUsingTheForce(Ship $ship){
+  private function didJediDestroyShipUsingTheForce(AbstractShip $ship){
     $jediHeroProbability = $ship->getJediFactor() / 100;
 
     return mt_rand(1, 100) <= ($jediHeroProbability*100);
