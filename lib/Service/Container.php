@@ -54,6 +54,9 @@ class Container{
     return $this->battleManager;
   }
   
+  /*
+   * @return AbstractShipStorage
+   */
   public function getShipStorage(){
     if($this->shipStorage == null){
       //$this->shipStorage = new PDOShipStorage($this->getPDO());
