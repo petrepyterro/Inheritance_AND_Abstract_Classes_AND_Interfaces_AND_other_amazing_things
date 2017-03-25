@@ -3,16 +3,16 @@
 /*
  * SETTINGS!
  */
-$databaseName = 'Services_Dependency_Injection_AND_Containers';
+$databaseName = 'oo_battle';
 $databaseUser = 'root';
-$databasePassword = 'mysql';
+$databasePassword = '';
 
 /*
  * CREATE THE DATABASE
  */
 $pdoDatabase = new PDO('mysql:host=localhost', $databaseUser, $databasePassword);
 $pdoDatabase->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$pdoDatabase->exec('CREATE DATABASE IF NOT EXISTS Services_Dependency_Injection_AND_Containers');
+$pdoDatabase->exec('CREATE DATABASE IF NOT EXISTS oo_battle');
 
 /*
  * CREATE THE TABLE
@@ -37,20 +37,20 @@ $pdo->exec('CREATE TABLE `ship` (
  * INSERT SOME DATA!
  */
 $pdo->exec('INSERT INTO ship
-    (name, weapon_power, jedi_factor, strength, team) VALUES
-    ("Jedi Starfighter", 5, 15, 30, "rebel")'
+  (name, weapon_power, jedi_factor, strength, team) VALUES
+  ("Jedi Starfighter", 5, 15, 30, "rebel")'
 );
 $pdo->exec('INSERT INTO ship
-    (name, weapon_power, jedi_factor, strength, team) VALUES
-    ("CloakShape Fighter", 2, 2, 70, "rebel")'
+  (name, weapon_power, jedi_factor, strength, team) VALUES
+  ("CloakShape Fighter", 2, 2, 70, "rebel")'
 );
 $pdo->exec('INSERT INTO ship
-    (name, weapon_power, jedi_factor, strength, team) VALUES
-    ("Super Star Destroyer", 70, 0, 500, "empire")'
+  (name, weapon_power, jedi_factor, strength, team) VALUES
+  ("Super Star Destroyer", 70, 0, 500, "empire")'
 );
 $pdo->exec('INSERT INTO ship
-    (name, weapon_power, jedi_factor, strength, team) VALUES
-    ("RZ-1 A-wing interceptor", 4, 4, 50, "empire")'
+  (name, weapon_power, jedi_factor, strength, team) VALUES
+  ("RZ-1 A-wing interceptor", 4, 4, 50, "empire")'
 );
 
 echo "Ding!\n";
