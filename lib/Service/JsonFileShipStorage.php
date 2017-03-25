@@ -1,6 +1,6 @@
 <?php
 
-class JsonFileShipStorage{
+class JsonFileShipStorage extends PDOShipStorage{
   private $filename;
 
   public function __construct($jsonFilePath){
